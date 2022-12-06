@@ -1,4 +1,4 @@
-{
+[{
 	"_id": "637ea5358559fabda8a354e8",
 	"hospital_id": "1",
 	"hospital_org_id": "1",
@@ -103,4 +103,4 @@
 	"county": "Cherokee County",
 	"hospital_bed_size": "<100 beds",
 	"updated_dt": "October 7, 2022"
-}
+}]
