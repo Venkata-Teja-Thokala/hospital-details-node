@@ -5,8 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const mongourl = "mongodb+srv://Venkatateja_thokala:Teja1234@cluster0.ilvuzg9.mongodb.net/?retryWrites=true&w=majority";
 
-const host = 'localhost';
-const port = 9000;
+//const host = 'localhost';
+const port = process.env.port ||9000;
 
 const requestListener = async function (req, res) {
     if(req.url === '/about') {
@@ -31,8 +31,8 @@ const requestListener = async function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+server.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
 
 async function dbClient(query) {
