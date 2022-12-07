@@ -13,6 +13,7 @@ const port = process.env.port || 9000;
 // create server function using http.createServer
 const server = http.createServer(async (request, response) =>{
     // if end points contains about
+    console.log('Teja');
     if(request.url === '/about') {
         // load index.html from public folder available
         fs.readFile(path.join(__dirname, 'public','index.html'), (err, data) =>{
@@ -33,7 +34,7 @@ const server = http.createServer(async (request, response) =>{
             // set data to response end
             response.end(data);
         })
-    } else if(request.url ===  "/hospitalDetails"){
+    } else if(request.url.includes("/hospitalDetails")){
         // get query parameter
         const queryObject = url.parse(request.url, true).query;
         // set contentType as aplication/json and access control to allow origin
