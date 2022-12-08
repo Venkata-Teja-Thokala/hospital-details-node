@@ -1,23 +1,208 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :root{
-            background-color: rgba(0, 0, 0, 0.1);
-            }
-.container{
-    min-height : 100%;
-    margin-left : 15vw;
-    margin-right : 15vw;
-    background-color: gray;
-    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="lsidebar"></div>
+        <main class="main">
+            <nav id="naviation">
+                <a class = 'home_label navitem' href="#introduction">HOME</a>
+                <a class = 'skills_label navitem' href="#skills">SKILLS</a>
+                <a class = 'education_label navitem' href="#education">EDUCATION</a>
+                <a class = 'projects_label navitem' href="#projects">PROJECTS</a>
+                <a class = 'experience_label navitem' href="#experience">EXPERIENCE</a>
+                <span class="responsive" onclick="showMenu()">
+                    <hr>
+                    <hr>
+                    <hr>
+                </span>
+            </nav>
+            <div id="home">
+                <img id="circle" src="https://png.pngitem.com/pimgs/s/146-1468465_early-signs-of-conception-user-profile-icon-hd.png">
+                <div id="introduction">
+                        <h1>Venkata Teja Thokala</h1>
+                        <p>"Welcome. I am a graduate student in University of New Haven pursuing my master's in Computer and Information Sciences. I am a Full stack developer. I apply algorithms to make systems work better."</p>
+                </div>
+            </div>
+
+            <div id="skills">
+                <div id="skills_heading">SKILLS</div>
+                <div class="skills_container">
+                    <div id="skills_image"><img src="https://cdn-icons-png.flaticon.com/512/2817/2817065.png"></img></div>
+                    <div id="skills_list">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>JAVA</li>
+                            <li>SPRING</li>
+                            <li>SQL</li>
+                            <li>ANGULAR</li>
+                            <li>REACT</li>
+                            <li>REDUX</li>
+                            <li>VUE</li>
+                            <li>NODE JS</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <div id="education">
+                <div id="education_heading">EDUCATION</div>
+                <div id="education_container">
+                    <span class = "edu_details" id="edu_details1"> 
+                        <div>GRADUATION</div>
+                    <b>University of New Haven</b><br>
+                    Computer and Information Sciences<br>
+                    2021 - 2023
+                </span>
+                    <span class = "edu_details"
+                    id="edu_details2">
+                        <div>B - TECH</div>
+                        <b>JAWAHARLAL NEHRU TECHNOLOGICAL INSTITUTE</b><br>
+                        ECE<br>
+                        2010 - 2014
+                    </span>
+                    <span class = "edu_details"
+                    id="edu_details3">
+                        <div>SCHOOL, +2</div> <b>VIGNAN RESIDENTIAL PUBLIC SCHOOL</b><br>
+                        2006 - 2008<br><br>
+                        <b>SRI CHAITANYA JR COLLEGE</b><br>
+                        2008 - 2010</span>      
+                </div>
+            </div>
+            <div id="projects">
+                <div id="projects_heading">PROJECTS</div>
+                <div class="project_container">
+                    <div id="projects_image"><img src="https://cdn-icons-png.flaticon.com/512/2683/2683274.png"></img></div>
+                    <div id="projects_list">
+                        <ul>
+                            <li>PAID TIME OFF</li>
+                            <li>DISPATCH SERVICES</li>
+                            <li>THEME MANAGEMENT</li>
+                            <li>ACCESS CONTROL & AUTHORIZATION</li>
+                            <li>MARKETPLACE APIS</li>
+                            <li>MIGRATION</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <div id="experience">
+                <div id="experience_heading">EXPERIENCE</div>
+                <div id="experience1">
+                    <div id="content">
+                        <h1><u>Automatic Data Processing</u> :</h1>
+                        <h2>Portal as a Service</h2>
+                        <p>Portal integrates all the functionalities and provides common services like login and logouts, Authentication and Authorization, workflow and work delegations.</p>
+                        <p><b>Worked From 2015 to 2018 as a Member Technical</b></p>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2825/2825990.png">
+                </div>
+                <div id="experience2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7174/7174372.png">
+                        <div id="content2">
+                        <h2>Paid Time Off - WFN</h2>
+                        <p>Time Off feature allows users to request Time off using few time off policies setted by admins. It includes number of hours awarding based on different factors. </p>
+                        <p><b>Worked From 2018 to 2021 as a Senior Member Technical</b></p>
+                    </div>
+                    </div>
+                
+                <hr>
+                <div id="experience3">
+                    <div id="content">
+                        <h1><u>Unique Logic Solutions</u> :</h1>
+                        <h2>Data Migrations</h2>
+                        <p>Data Migrations from old system to new system efficiently and accurately with high throughput. After making this change.</p>
+                        <p><b>Worked for 3 months as a Software Engineer - Intern</b></p>
+                    </div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3051/3051973.png">
+                </div>
+            </div>
+            <footer><div id="footer">
+                <div id="links">
+                    <div id="footer_links1">
+                        <a href="#introduction">ABOUT</a>
+                        <a href="#education">EDUCATION</a>
+                        <a href="#projects">PROJECTS</a>
+                        <a href="#experience">EXPERIENCE</a>
+                        
+                    </div>
+                    <div id="footer_links2">
+                        <a>CAREERS</a>
+                        <a>COLLABORATIONS</a>
+                        <a>ACHIEVEMENTS</a>
+                        <a>COMING UP</a>
+                    </div>
+                </div>
+                <div id="contact">
+                    <div id="place">West Haven, Connecticut</div>
+                    <div id="email">e-mail : venkatateja.thokala@gmail.com
+                    </div>
+                    <div id="social_media_images">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111398.png">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png">
+                    </div>
+                </div>
+        </footer>
+        </main>
+        <div class="rsidebar"></div>
+    </div>
+    <script>
+        function showMenu() {
+            var x = document.getElementById("naviation");
+            x.classname += "responsive menu";
+        }
+        </script>
+	
+</body>
+<style>
+*{
+    margin: 0;
+    border: 0;
+   box-sizing : border-box;
 }
 
-#nav{
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "lsidebar main rsidebar";
+}
+
+.rsidebar {
+    grid-area: rsidebar;
+    background-color: gray;
+    min-width: 15vw;
+}
+.lsidebar {
+    background-color: gray;
+    grid-area: lsidebar;
+    min-width: 15vw;
+}
+main {
+    grid-area: main;
+    min-height: 200vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "home"
+    "skills"
+    "education"
+    "projects"
+    "experience";
+}
+
+nav{
+    display: inline-flex;
     background-color: rgb(2, 2, 69);
     max-height: 10vh;
     color: white;
@@ -26,24 +211,43 @@
     font-weight: 300;
     padding-top: 30px;
     padding-bottom: 30px;
+    grid-area: nav;
 }
+
+.responsive hr{
+    background-color: white;
+    height: 5px;
+    margin: 2px;
+    border-radius: 3px;
+    width : 20px;
+    margin-right: 10vw;
+    position: relative;
+    align-items: flex-end;
+    visibility: hidden;
+}
+
 .navitem{
     text-decoration: none;
     margin-left: 20px;
     margin-right: 5px;
     color: white;
 }
+
 #home {
     background-color: white;
     padding:50px;
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "circle introduction"; 
 }
+
 #circle {
     border-radius: 50%;
     border:rgb(2, 2, 69) solid;
     border-color: rgb(2, 2, 69);
     height: 300px;
-    width: 83%;
+    width: 350px;
     padding: 10px;
 }
 #introduction {
@@ -54,38 +258,45 @@
     color:rgb(2, 2, 69);
     font-size: 18px;
 }
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
-}
 
 #skills{
     background-color: rgb(2, 2, 69);
     color: white;
     padding-right : 20px;
     padding-left : 20px;
-    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    "skills_heading"
+    "skills_container"; 
 }
 
 .skills_container{
-    display: inline-flex;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "skills_image skills_list";
 }
 
 #skills_heading {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 250%;
+    grid-area: skills_heading;
+}
+
+#skills img{
+    width: 300px;
+    height: 350px;
+    grid-area: skills_image;
 }
 #skills_list{
     margin-left: 200px;
     min-width: 25vw;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-}
-#skills img{
-    width: 30vw;
-    height: 60vh;
+    grid-area: skills_list;
 }
 
 #education {
@@ -94,13 +305,25 @@ h1{
     text-align: center;
     font-size: 20px;
     padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "education_heading"
+    "education_container";
 }
 #education_heading {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 250%;
+    grid-area: education_heading;
 }
 #education_container {
-    display: inline-flex;
+    grid-area: education_container;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "edu_details1 edu_details2 edu_details3";
 }
 .edu_details {
     align-items: center;
@@ -110,7 +333,8 @@ h1{
     margin-right: 30px;
     min-width: 250px;
     min-height: 300px;
-    border-radius: 20px;   
+    border-radius: 20px;  
+    margin-top: 10px;
 }
 
 .edu_details div {
@@ -124,33 +348,61 @@ h1{
     margin-bottom: 50px;
 }
 
+#edu_details1{
+    display: edu_details1;
+}
+
+#edu_details2{
+    display: edu_details2;
+}
+
+#edu_details3{
+    display: edu_details3;
+}
+
 #projects{
     background-color: rgb(2, 2, 69);
     color: white;
     padding-right : 20px;
     padding-left : 20px;
-    
-}
-
-.project_container{
-    display: inline-flex;
-    padding: 20px;
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas : 
+    "projects_heading"
+    "project_container"; 
 }
 
 #projects_heading {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 250%;
+    grid-area: projects_heading;
 }
+.project_container{
+    margin-inline:auto;
+    padding: 20px;
+    grid-area: project_container;
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas : 
+    "project_img projects_list";
+}
+
+
 #projects_list{
     margin-left: 200px;
     min-width: 25vw;
     font-family: 'Times New Roman', Times, serif;
     line-height: 2.5;
+    grid-area : projects_list;
 }
+
 #projects img{
-    width: 20vw;
-    height: 40vh;
+    width: 200px;
+    height: 250px;
+    grid-area: project_img;
 }
 
 #experience {
@@ -159,20 +411,31 @@ h1{
     text-align: center;
     font-size: 20px;
     padding-bottom: 50px;
-}
-#experience_heading {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 250%;
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas : 
+    "experience_heading"
+    "experience1"
+    "experience2"
+    "hr"
+    "experience3";
 }
 
 #experience1{
-    display: inline-flex;
+    grid-area: experience1;
     text-align: left;
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas :
+    "content1 exp_image"
 }
 
 #content h1{
     font-size: xx-large;
     margin-left : 25px;
+    padding-bottom: 5px;
 }
 
 #content h2{
@@ -184,9 +447,38 @@ h1{
     font-size: x-large;
     margin-left : 45px;
 }
+#expereince1 #content {
+    grid-area : content1;
+}
+#expereince1 img {
+    grid-area : exp_image;
+}
+
+#experience2{
+    grid-area: experience2;
+    text-align: left;
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas :
+    "exp_image2 content2"
+}
+
+#expereince2 #content {
+    grid-area : content2;
+}
+#expereince2 img {
+    grid-area : exp_image2;
+}
 
 #experience1 img {
-    max-width: 300px;
+    max-width: 200px;
+    margin-right: 20px ;
+    margin-left:30px
+}
+
+#experience3 img {
+    max-width: 200px;
     margin-right: 20px ;
     margin-left:30px
 }
@@ -206,8 +498,39 @@ h1{
 }
 
 #experience2 img {
-    min-width: 250px;
+    min-width: 200px;
     margin-right: 50px;
+}
+
+#experience3{
+    grid-area: experience3;
+    text-align: left;
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas :
+    "content3 exp_image3"
+}
+
+#content h1{
+    font-size: xx-large;
+    margin-left : 25px;
+}
+
+#content h2{
+    font-size: x-large;
+    margin-left : 35px;
+}
+
+#content p{
+    font-size: x-large;
+    margin-left : 45px;
+}
+#expereince3 #content {
+    grid-area : content3;
+}
+#expereince3 img {
+    grid-area : exp_image3;
 }
 
 hr{
@@ -217,54 +540,82 @@ hr{
     margin-right:2%;
     border-radius: 5px;
     margin-bottom: 30px;
+    margin-top: 30px;
     border: none;
+
 }
 
-#footer{
+#experience_heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 250%;
+}
+
+footer{
     background-color: rgb(2, 2, 69);
     color: white;
     padding-right : 20px;
-    padding-left : 20px;    
+    padding-left : 20px;   
+    display : grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas :
+    "links"
+    "contact"
 }
+
+
 
 #links a{
     display: block;
     margin-top: 10px;
+    grid-area:links;
+
 }
 
 #footer #links{
-    display: inline-flex;
     margin-top: 2em;
     margin-bottom: 2em;
-
+    display : grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas :
+    "links1 links2"
+    
 }
 
 #footer_links1 {
-    margin-right: 120%;
-    margin-left: 10%;
+    grid-area: links1;
 }
 #footer_links2 {
-    margin-left : 120%;
+    grid-area:links2;
 }
 
-#place {
-    text-align:left;
-    margin-left:20px;
-}
 
-#email{
-    text-align: right;
-    margin-right: 10%;
-}
 
 #contact{
-    display: inline;
+    grid-area: contact;
+    display : grid;
+    grid-template-columns: 1fr 0.45fr;
+    grid-template-rows: 1fr;
+    grid-template-areas :
+    "place email"
+    ". social_mediaImages"
 }
 
 #social_media_images {
     display:inline-flex;
+    float: right;
+    grid-area: social_mediaImages;
+}
+
+#place {
+    grid-area: place;
+}
+
+#email{
+    grid-area:email;
     text-align: right;
-    margin-left:65%
+    padding-right: 20px;
 }
 
 #social_media_images img {
@@ -276,145 +627,163 @@ hr{
     text-decoration: none;
     color: white;
 }
-  </style>
-  </head>
-  <body>
-    <div class="container">
-        <div id="nav">
-            <a class = 'home_label navitem' href="#introduction">HOME</a>
-            <a class = 'skills_label navitem' href="#skills">SKILLS</a>
-            <a class = 'education_label navitem' href="#education">EDUCATION</a>
-            <a class = 'projects_label navitem' href="#projects">PROJECTS</a>
-            <a class = 'experience_label navitem' href="#experience">EXPERIENCE</a>
-        </div>
-        <div id="home">
-            <img id="circle" src="https://png.pngitem.com/pimgs/s/146-1468465_early-signs-of-conception-user-profile-icon-hd.png">
-            <div id="introduction">
-                    <h1>Venkata Teja Thokala</h1>
-                    <p>"Welcome. I am a graduate student in University of New Haven pursuing my master's in Computer and Information Sciences. I am a Full stack developer. I apply algorithms to make systems work better."</p>
-            </div>
-        </div>
-        <div id="skills">
-            <div id="skills_heading">SKILLS</div>
-            <div class="skills_container">
-                <div id="skills_image"><img src="https://cdn-icons-png.flaticon.com/512/2817/2817065.png"></img></div>
-                <div id="skills_list">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>JAVA</li>
-                        <li>SPRING</li>
-                        <li>SQL</li>
-                        <li>ANGULAR</li>
-                        <li>REACT</li>
-                        <li>REDUX</li>
-                        <li>VUE</li>
-                        <li>NODE JS</li>
-                    </ul>
-            </div>
-            </div>
-        </div>
-        <div id="education">
-            <div id="education_heading">EDUCATION</div>
-            <div id="education_container">
-                <span class = "edu_details"> 
-                    <div>GRADUATION</div>
-                <b>University of New Haven</b><br>
-                Computer and Information Sciences<br>
-                2021 - 2023
-            </span>
-                <span class = "edu_details">
-                    <div>B - TECH</div>
-                    <b>JAWAHARLAL NEHRU TECHNOLOGICAL INSTITUTE</b><br>
-                    ECE<br>
-                    2010 - 2014
-                </span>
-                <span class = "edu_details">
-                    <div>SCHOOL, +2</div> <b>VIGNAN RESIDENTIAL PUBLIC SCHOOL</b><br>
-                    2006 - 2008<br><br>
-                    <b>SRI CHAITANYA JR COLLEGE</b><br>
-                    2008 - 2010</span>      
-            </div>
-        </div>
-        <div id="projects">
-            <div id="projects_heading">PROJECTS</div>
-            <div class="project_container">
-                <div id="projects_image"><img src="https://cdn-icons-png.flaticon.com/512/2683/2683274.png"></img></div>
-                <div id="projects_list">
-                    <ul>
-                        <li>PAID TIME OFF</li>
-                        <li>DISPATCH SERVICES</li>
-                        <li>THEME MANAGEMENT</li>
-                        <li>ACCESS CONTROL & AUTHORIZATION</li>
-                        <li>MARKETPLACE APIS</li>
-                        <li>MIGRATION</li>
-                    </ul>
-            </div>
-            </div>
-        </div>
-        <div id="experience">
-            <div id="experience_heading">EXPERIENCE</div>
-            <div id="experience1">
-                <div id="content">
-                    <h1><u>Automatic Data Processing</u> :</h1>
-                    <h2>Portal as a Service</h2>
-                    <p>Portal integrates all the functionalities and provides common services like login and logouts, Authentication and Authorization, workflow and work delegations.</p>
-                    <p><b>Worked From 2015 to 2018 as a Member Technical</b></p>
-                </div>
-                <img src="https://cdn-icons-png.flaticon.com/512/2825/2825990.png">
-            </div>
-            <div id="experience2">
-                    <img src="https://cdn-icons-png.flaticon.com/512/7174/7174372.png">
-                    <div id="content2">
-                    <h2>Paid Time Off - WFN</h2>
-                    <p>Time Off feature allows users to request Time off using few time off policies setted by admins. It includes number of hours awarding based on different factors. </p>
-                    <p><b>Worked From 2018 to 2021 as a Senior Member Technical</b></p>
-                </div>
-                </div>
-            
-            <hr>
-            <div id="experience1">
-                <div id="content">
-                    <h1><u>Unique Logic Solutions</u> :</h1>
-                    <h2>Data Migrations</h2>
-                    <p>Data Migrations from old system to new system efficiently and accurately with high throughput. After making this change.</p>
-                    <p><b>Worked for 3 months as a Software Engineer - Intern</b></p>
-                </div>
-                <img src="https://cdn-icons-png.flaticon.com/512/3051/3051973.png">
-            </div>
-        </div>
-        <div id="footer">
-            <div id="links">
-                <div id="footer_links1">
-                    <a href="#introduction">ABOUT</a>
-                    <a href="#education">EDUCATION</a>
-                    <a href="#projects">PROJECTS</a>
-                    <a href="#experience">EXPERIENCE</a>
-                    
-                </div>
-                <div id="footer_links2">
-                    <a>CAREERS</a>
-                    <a>COLLABORATIONS</a>
-                    <a>ACHIEVEMENTS</a>
-                    <a>COMING UP</a>
-                </div>
-            </div>
 
-            <div id="contact">
-                <div id="place">West Haven, Connecticut</div>
-                <div id="email">e-mail : venkatateja.thokala@gmail.com
-                </div>
-                <div id="social_media_images">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111398.png">
+nav .responsive .menu a{
+    display: block;
+}
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-  </body>
 
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "main";
+    }
+
+    .rsidebar {
+        display: none;
+    }
+
+    .lsidebar {
+        display: none;
+    }
+
+    h1{
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #home {
+        background-color: white;
+        padding:20px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "circle" "introduction"; 
+    }
+
+    .responsive hr{
+        visibility: visible;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    #circle {
+        margin-inline: auto;
+    }
+
+    .skills_container{
+        margin-inline: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"skills_list";
+    }
+
+    #skills_list{
+        margin-left: 0px;
+    }
+
+    #education_container {
+        grid-area: education_container;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "edu_details1" "edu_details2" "edu_details3";
+    }
+
+    .project_container{
+        margin-inline: auto;
+        padding: 20px;
+        grid-area: project_container;
+        display : grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        grid-template-areas : 
+        "project_img" "projects_list";
+    }
+
+    #projects_list{
+        margin-left: 0px;
+    }
+    #projects_image{
+        display:none;
+    }
+
+    #experience1{
+        grid-area: experience1;
+        text-align: center;
+        display : grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        grid-template-areas :
+        "content1"
+    }
+
+    #experience2{
+        grid-area: experience2;
+        text-align: center;
+        display : grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        grid-template-areas :
+        "content2"
+    }
+
+    #experience3{
+        grid-area: experience3;
+        text-align: center;
+        display : grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        grid-template-areas :
+        "content3"
+    }
+
+    #experience img {
+        display: none;
+    }
+
+    #skills_image {
+        display:none;
+    }
+
+    nav a{
+        display : none;
+    }
+
+    #email{
+        text-align: left;
+        margin-right: 10%;
+    }
+
+    #footer #links{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display : grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas :
+        "links1" "links2";   
+    }
+
+    #contact{
+        grid-area: contact;
+        display : grid;
+        grid-template-columns: 1fr 0.45fr;
+        grid-template-rows: 1fr;
+        grid-template-areas :
+        "place" "email"
+        "social_mediaImages"
+    }
+}
+</style>
 </html>
